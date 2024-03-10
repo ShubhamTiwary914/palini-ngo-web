@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulb On/Off</title>
+    <script>
+        function toggleBulb() {
+            var bulb = document.getElementById("bulb");
+            if (bulb.src.endsWith("bulb_on.png")) {
+                bulb.src = "bulb_off.png";
+            } else {
+                bulb.src = "bulb_on.png";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Bulb On/Off</h1>
+    <img id="bulb" src="bulb_off.png" alt="Bulb" onclick="toggleBulb()">
+    <p>Click the bulb to turn it on and off.</p>
+</body>
+</html>
